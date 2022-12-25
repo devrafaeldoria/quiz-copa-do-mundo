@@ -24,20 +24,20 @@
             <h1>Escolha a dificuldade</h1>
         </div>
         <div class="menu-escolha-corpo">
-            <div class="opcoes-dificuldade">
-                <h3>Iniciante</h3>
+            <div class="opcoes-dificuldade" data-dificuldade="0">
+                <h3 data-dificuldade="0">Iniciante</h3>
                 <span class="resultado-iniciante">0/10</span>
             </div>
-            <div class="opcoes-dificuldade">
-                <h3>Amador</h3>
+            <div class="opcoes-dificuldade" data-dificuldade="1">
+                <h3 data-dificuldade="1">Amador</h3>
                 <span class="resultado-amador">0/10</span>
             </div>
-            <div class="opcoes-dificuldade">
-                <h3>Entusiasta</h3>
+            <div class="opcoes-dificuldade" data-dificuldade="2">
+                <h3 data-dificuldade="2">Entusiasta</h3>
                 <span class="resultado-entusiasta">0/10</span>
             </div>
-            <div class="opcoes-dificuldade">
-                <h3>Lenda</h3>
+            <div class="opcoes-dificuldade" data-dificuldade="3">
+                <h3 data-dificuldade="3">Lenda</h3>
                 <span class="resultado-lenda">0/10</span>
             </div>
         </div>
@@ -48,10 +48,7 @@
             ...
         </div>
         <div class="opcoes">
-            <!-- 
-                javascript irá adicionar esse modelo de div
-                <div data-opc="0" class="alternativa"><span>1</span>Lorem ipsum dolor sit.</div> 
-            -->
+            <!-- <div data-opc="0" class="alternativa"><span>1</span>Lorem ipsum dolor sit.</div> -->
         </div>
     </div>
 
@@ -61,7 +58,7 @@
         </div>
 
         <div class="placar-imagem">
-            <div><img style="width: 100%;" src="assests/images/assustado.png" alt=""></div>
+            <div><img style="width: 100%;" src="" alt=""></div>
         </div>
 
         <div class="placar-descricao">
@@ -69,8 +66,8 @@
         </div>
 
         <div class="botoes">
-            <button>Continuar</button>
-            <button>Refazer</button>
+            <button class="continuar">Continuar</button>
+            <button class="refazer">Refazer</button>
         </div>
    </div>
 
@@ -83,6 +80,6 @@
    </footer>
 
     <script src="assests/javascript/perguntas.js"></script>
-    <script src="assests/js/script.js"></script>
+    <script src="assests/javascript/script.js"></script>
 </body>
 </html>

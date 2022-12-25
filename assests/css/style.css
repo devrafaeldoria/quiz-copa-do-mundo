@@ -56,7 +56,7 @@ footer {
 
 /* Escolha da dificuldade */
 .menu-escolha {
-    display: none;
+    display: block;
     height: 400px;
     width: 400px;
     border-radius: 40px;
