@@ -1,19 +1,29 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     height: 100vh;
-    background-image: url('../images/bg-futebol.jpg');
+    background-image: url('../images/bg2-futebol.jpg');
     background-position: center;
     background-size: cover;
 }
 footer {
     text-align: center;
-    background-color: #222;
+    background-color: #555;
     padding: 20px;
+    font-size: 10px;
 }
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* Barra de progresso */
 .progresso {
@@ -60,7 +70,7 @@ footer {
     height: 400px;
     width: 400px;
     border-radius: 40px;
-    background-color: #ccc;
+    background-color: #7cfc00;
     box-shadow: 12px 10px 10px #333;
 }
 .menu-escolha-titulo {
@@ -74,15 +84,16 @@ footer {
 .opcoes-dificuldade {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #000;
-    background-color: #ddd;
+    border: 1px solid #63ca00;
+    background-color: #9cff3c;
     padding: 10px 30px;
     margin-top: 10px;
     border-radius: 20px;
 }
 .opcoes-dificuldade:hover,
-.alternativa:hover {
-    background-color: #fff;
+.alternativa:hover,
+button:hover {
+    background-color: #63ca00;
     cursor: pointer;
 }
 
@@ -93,7 +104,7 @@ footer {
     height: 400px;
     width: 400px;
     border-radius: 40px;
-    background-color: #ccc;
+    background-color: #7cfc00;
     box-shadow: 12px 10px 10px #333;
     padding: 30px;
 }
@@ -101,11 +112,14 @@ footer {
     text-align: center;
     height: 100px;
     padding: 25px 5px;
+    font-weight: bold;
+    font-size: 20px;
 }
 .alternativa {
     display: flex;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid #63ca00;
+    background-color: #9cff3c;
     padding: 10px 20px;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -129,7 +143,7 @@ footer {
     height: 400px;
     width: 400px;
     border-radius: 40px;
-    background-color: #ccc;
+    background-color: #7cfc00;
     box-shadow: 12px 10px 10px #333;
     padding: 30px; 
 }
@@ -146,20 +160,44 @@ footer {
     margin-bottom: 20px;
 }
 button {
-    padding: 5px 20px;
+    padding: 7px 40px;
     border-radius: 20px;
-    border: 1px solid #000;
+    border: 1px solid #63ca00;
     cursor: pointer;
+    background-color: #9cff3c;
+    font-weight: bold;
 }
-button:hover {
-    background-color: #fff;
+
+
+
+
+
+
+/* Responsivo */
+@media (min-width:340px) and (max-width:500px) {
+    .menu-escolha,
+    .area-perguntas,
+    .area-placar {
+        width: 80%;
+    }
+
+    .menu-escolha-titulo {
+        font-size: 12px;
+    }
+
+    .area-placar {
+        height: auto;
+    }
+    button {
+        margin-bottom: 10px;
+        padding: 8px 0px;
+        width: 100px;
+    }
+
+    .tamanho-alternativas {
+        font-size: 13px;
+    }
+    .pergunta {
+        font-size: 16px;
+    }
 }
-
-
-
-
-
-
-
-
-

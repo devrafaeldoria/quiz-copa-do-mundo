@@ -15,7 +15,6 @@ function mostrarQuestao() {
         let q = quiz[dificuldade].perguntas[questao];
 
         document.querySelector('.menu-escolha').style.display = 'none';
-
         document.querySelector('.area-perguntas').style.display = 'block';
 
         let pct = (questao / quiz[dificuldade].perguntas.length) * 100;
@@ -29,7 +28,7 @@ function mostrarQuestao() {
         let html = '';
 
         for(let a in q.alternativas) {
-            html += `<div data-opc="${a}" class="alternativa"><span>${parseInt(a) + 1}</span>${q.alternativas[a]}</div>`;
+            html += `<div data-opc="${a}" class="alternativa tamanho-alternativas"><span>${parseInt(a) + 1}</span>${q.alternativas[a]}</div>`;
         }
 
         document.querySelector('.opcoes').innerHTML = html;

@@ -350,36 +350,36 @@ let quiz = [
         perguntas: [
             // 1
             {
-                questao: 'Qual desses jogadores não tem copa do mundo',
+                questao: 'Quem foi o artilheiro da Copa de 2022',
                 alternativas: [
-                    'Otamendi',
-                    'Kante',
-                    'Di Maria',
-                    'Kane'
+                    'Mbappe',
+                    'Messi',
+                    'Giroud',
+                    'Richarlison'
                 ],
-                correta: 3
+                correta: 0
             },
             // 2
             {
-                questao: 'Quem foi o primeiro campeao da copa do mundo',
+                questao: 'Qual seleção tem mais gols somados em todas copas',
                 alternativas: [
+                    'Alemanha',
                     'Brasil',
                     'Argentina',
-                    'Alemanha',
                     'Uruguai'
                 ],
-                correta: 3
+                correta: 1
             },
             // 3
             {
-                questao: 'Quantas copas do mundo tem o Pele',
+                questao: 'Quantos gols tem',
                 alternativas: [
-                    '3',
-                    '2',
-                    '1',
-                    '4'
+                    '232',
+                    '234',
+                    '236',
+                    '212'
                 ],
-                correta: 0
+                correta: 2
             },
             // 4
             {
